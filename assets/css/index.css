@@ -1,0 +1,89 @@
+
+  body {
+    color: var(--dark);
+    background: var(--light);
+  }
+  
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+  .image {
+    position: absolute;
+    top: 7rem;
+    border-radius: 10px;
+    bottom: 0.5rem;
+    right: 7rem;
+    max-width: 750px;
+    max-height: 500px;
+    opacity: 0;
+    animation: fade_in 1s linear forwards;
+    animation-delay: 2.3s;
+  }
+  
+  
+  
+  .content {
+    position: relative;
+  }
+  .content .text {
+    position: relative;
+    max-width: 500px;
+  }
+  .content .text h2 {
+    color: var(--accent-color);
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 1.1em;
+    opacity: 0;
+    animation: slide_right 0.5s linear forwards;
+    animation-delay: 1.4s;
+  }
+
+  .content .text h3 {
+    color: var(--highlight-color);
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 1.1em;
+    opacity: 0;
+    animation: slide_right 0.5s linear forwards;
+    animation-delay: 1.4s;
+  }
+  
+  .content .text p {
+    font-size: 1.2em;
+    color: var(--dark);
+    opacity: 0;
+    animation: slide_left 0.5s linear forwards;
+    animation-delay: 1.74s;
+  }
+  .content .text a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: var(--highlight-color);
+    border-radius: 30px;
+    color: var(--light);
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 650;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: slide_top 0.5s linear forwards;
+    animation-delay: 2s;
+  }
+  .content .text a:hover {
+    color: var(--dark);
+    transform: translateY(-10px);
+  }
+
+  

@@ -1,0 +1,113 @@
+
+  body {
+    display: flex;
+    grid-template-rows: 1fr auto;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    color: var(--dark);
+    background: var(--light);
+
+  }
+  
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px 0;
+    opacity: 0;
+    animation: fade_in 1s linear forwards;
+    animation-delay: 2s;
+  }
+
+  .card {
+      position: relative;
+      min-width: 320px;
+      height: 440px;
+      box-shadow: 5px 5px 5px #242425, -5px -5px -5px #666669
+      5px 5px 5px #242425,-5px -5px -5px #666669;
+      border-radius: 15px;
+      margin: 30px;
+      
+    }
+    .card:hover {
+      color: var(--dark);
+      transform: translateY(-10px);
+    }
+    .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background:  #bf231b;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+  }
+
+  
+  .content {
+    position: absolute;
+    margin: 5px;
+    padding: 5px;
+  }
+  .tittle {
+    position: relative;
+    margin: 3px;
+  }
+  .subTittle {
+    position: relative;
+    margin-bottom: 5px;
+    color: var(--highlight-color);
+  }
+  .text {
+    position: relative;
+    margin-bottom: 5px;
+    color: var(--dark);
+  }
+  .image {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 200px; 
+    display: block;
+    object-fit: cover; 
+  }
+
+  .link a {
+    position:relative;
+    display: inline-block;
+    padding: 15px  30px;
+    background: var(--accent-color);
+    color: var(--dark); 
+    transition: 0.3s ease-in-out;
+    text-decoration: none;  
+    border-radius: 30px;
+    font-weight: bold; 
+    left: 10px; 
+  }
+  
+  .link :hover {
+    color: var(--light);
+  }
+
+  
+  

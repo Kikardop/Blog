@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    background: var(--light);
+    color: var(--dark);
+    margin: 0;
+}
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    color: var(--light);
+    
+}
+
+main {
+    flex: 1; /* Ocupa el espacio disponible */
+    margin-top: 100px; /* Altura del header */
+    margin-bottom: 120px; /* Espacio para el footer */
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: right;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.blog {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.blog-content {
+    text-align: justify;
+}
+
+.blog-content .blog-image,
+.blog-content .blog-inline-image {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.blog-content .blog-inline-image {
+    width: 80%; /* Las imágenes dentro del texto son más pequeñas */
+    margin: 15px auto;
+    display: block;
+}
+
+.blog-content h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-top: 20px;
+}
+
+.route-details,
+.hiking-gear,
+.helpful-links {
+    margin-left: 20px;
+}
+
+.route-details li,
+.hiking-gear li,
+.helpful-links li {
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 30%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*css modal*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+
+/*css carrusel*/
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    background: var(--accent-color);
+    color: var(--light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.carousel-controls button:hover {
+    background: var(--highlight-color);
+}
+
+
+/*scroll elementos*/
+
+.day, .photo-grid img, .resources ul li {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.day.visible, .photo-grid img.visible, .resources ul li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

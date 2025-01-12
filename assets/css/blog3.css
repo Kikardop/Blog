@@ -1,0 +1,155 @@
+/* General Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    color: var(--light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: right;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+
+/* Overview Section */
+.overview {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overview h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.overview p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Itinerary Section */
+.itinerary {
+    margin-bottom: 40px;
+}
+
+.itinerary h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.day {
+    margin-bottom: 30px;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day h3 {
+    font-size: 1.5rem;
+    color: var(--highlight-color);
+    margin-bottom: 10px;
+}
+
+.day p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.day-image {
+    width: 100%;
+    height: 40rem;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.gallery-image {
+    width: calc(25% - 15px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tips Section */
+.tips ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.tips ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Resources Section */
+.resources {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.resources ul li a:hover {
+    text-decoration: underline;
+    color: var(--highlight-color);
+}
